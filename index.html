@@ -8,6 +8,13 @@
             background-color: #e6ccff; 
         }
     </style>
+	<script>
+        function cambiarColorFondo() {
+            // Generar un color aleatorio en formato hexadecimal
+            var nuevoColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = nuevoColor;
+        }
+    </script>
 	</head>
 	<body>
 		<H1> Diego A Rodriguez </H1>
@@ -72,6 +79,7 @@
     </tr>
 </table>
 
+	<button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>	
 	</body>
 	
 
