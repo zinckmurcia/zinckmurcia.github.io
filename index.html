@@ -40,14 +40,16 @@
         /* Nuevos estilos para los visores de vista previa */
         .preview-container {
             position: relative;
-            border: 1px solid #ddd; /* Añadir un borde alrededor del visor de vista previa */
+            border: 3px solid black; /* Separación de color negro de unos 3 milímetros */
             margin: 10px;
             overflow: hidden;
+            float: left; /* Para colocarlos en línea */
+            width: calc(33.33% - 20px); /* Ajustar el ancho según el número de pantallas */
         }
 
         .iframe-container {
             width: 100%;
-            height: 400px; /* Altura del iframe ajustable según sea necesario */
+            height: 300px; /* Altura del iframe ajustable según sea necesario */
         }
 
         .alumno-nombre {
@@ -75,120 +77,65 @@
 
     <h1>Alumnos del curso y sus webs</h1>
 
-    <table border="1">
-        <tr>
-            <th>Alumno</th>
-            <th>URL de GitHub Pages</th>
-        </tr>
-        <tr>
-            <td>Jose Isidro</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Jose Isidro</div>
-                    <iframe class="iframe-container" src="https://jigs1984.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>DIEGO A RODRIGUEZ</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">DIEGO A RODRIGUEZ</div>
-                    <iframe class="iframe-container" src="https://zinckmurcia.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>BENJAMÍN MOLINA</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">BENJAMÍN MOLINA</div>
-                    <iframe class="iframe-container" src="https://benjamolina28.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Pablo Muelas</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Pablo Muelas</div>
-                    <iframe class="iframe-container" src="https://kantrull.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Antonio Soler Meseguer</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Antonio Soler Meseguer</div>
-                    <iframe class="iframe-container" src="https://zyrort.github.io" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Antonio Veiga</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Antonio Veiga</div>
-                    <iframe class="iframe-container" src="https://anjoveiga.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>TODOR PETROV NIKOLOV</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">TODOR PETROV NIKOLOV</div>
-                    <iframe class="iframe-container" src="https://todor199.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Jose Carballo Garcia</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Jose Carballo Garcia</div>
-                    <iframe class="iframe-container" src="https://sito1983.github.io" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Eduardo</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Eduardo</div>
-                    <iframe class="iframe-container" src="https://edu-estalker.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Leandro</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Leandro</div>
-                    <iframe class="iframe-container" src="https://leandroprog95.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Guillermo</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Guillermo</div>
-                    <iframe class="iframe-container" src="https://dalick94.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Antonio Jiménez</td>
-            <td>
-                <div class="preview-container">
-                    <div class="alumno-nombre">Antonio Jiménez</div>
-                    <iframe class="iframe-container" src="https://cursoprog24.github.io/" frameborder="0"></iframe>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <div class="preview-container">
+        <div class="alumno-nombre">Jose Isidro</div>
+        <iframe class="iframe-container" src="https://jigs1984.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">DIEGO A RODRIGUEZ</div>
+        <iframe class="iframe-container" src="https://zinckmurcia.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">BENJAMÍN MOLINA</div>
+        <iframe class="iframe-container" src="https://benjamolina28.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Pablo Muelas</div>
+        <iframe class="iframe-container" src="https://kantrull.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Antonio Soler Meseguer</div>
+        <iframe class="iframe-container" src="https://zyrort.github.io" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Antonio Veiga</div>
+        <iframe class="iframe-container" src="https://anjoveiga.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">TODOR PETROV NIKOLOV</div>
+        <iframe class="iframe-container" src="https://todor199.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Jose Carballo Garcia</div>
+        <iframe class="iframe-container" src="https://sito1983.github.io" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Eduardo</div>
+        <iframe class="iframe-container" src="https://edu-estalker.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Leandro</div>
+        <iframe class="iframe-container" src="https://leandroprog95.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Guillermo</div>
+        <iframe class="iframe-container" src="https://dalick94.github.io/" frameborder="0"></iframe>
+    </div>
+
+    <div class="preview-container">
+        <div class="alumno-nombre">Antonio Jiménez</div>
+        <iframe class="iframe-container" src="https://cursoprog24.github.io/" frameborder="0"></iframe>
+    </div>
 
     <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
 </body>
