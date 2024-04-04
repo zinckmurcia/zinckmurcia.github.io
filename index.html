@@ -7,24 +7,13 @@
         body {
             background-color: #ffa07a;
             text-align: center;
-            margin: 20px;
+            margin: 0; /* Remover márgenes para el cuerpo */
             font-family: Arial, sans-serif;
         }
 
         h1 {
             color: #333;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px auto;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
+            margin-top: 20px; /* Añadir margen solo en la parte superior del encabezado */
         }
 
         button {
@@ -44,11 +33,11 @@
             width: 100px;
         }
 
-        /* Estilo para el iframe del PDF */
+        /* Estilo ajustado para el iframe del PDF para que sea más grande */
         .pdf-viewer {
-            width: 80%; /* O el ancho que prefieras */
-            height: 500px; /* O la altura que prefieras */
-            margin: auto;
+            width: 100%; /* Usar todo el ancho disponible */
+            height: 90vh; /* Usar 90% de la altura de la ventana del navegador */
+            border: none; /* Opcional: remover el borde del iframe */
         }
     </style>
     <script>
@@ -64,7 +53,6 @@
     <img class="logo" src="logo.jpg" alt="Logo">
 
     <h1>Diego A Rodriguez</h1>
-    <!-- Incrustar el PDF directamente en la página -->
     <iframe src="20240404_CV_DIEGO_A_RODRIGUEZ.pdf" class="pdf-viewer"></iframe>
 
     <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
