@@ -5,20 +5,20 @@
     <title>Diego</title>
     <style>
         body {
-            background-color: #ffa07a; /* Inicializar con un tono naranja */
+            background-color: #ffa07a;
             text-align: center;
             margin: 20px;
-            font-family: Arial, sans-serif; /* Añadido para mejorar la legibilidad del texto */
+            font-family: Arial, sans-serif;
         }
 
         h1 {
-            color: #333; /* Color del texto del encabezado */
+            color: #333;
         }
 
         table {
             border-collapse: collapse;
             width: 80%;
-            margin: 20px auto; /* Centrar la tabla con márgenes automáticos */
+            margin: 20px auto;
         }
 
         th, td {
@@ -29,7 +29,7 @@
 
         button {
             padding: 10px 20px;
-            border-radius: 5px; /* Esquinas redondeadas */
+            border-radius: 5px;
             border: none;
             background-color: #4285f4;
             color: white;
@@ -37,17 +37,23 @@
             margin-top: 20px;
         }
 
-        /* Nuevo estilo para el logotipo */
         .logo {
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 100px; /* Ancho del logotipo ajustable según sea necesario */
+            width: 100px;
+        }
+
+        /* Estilo para el iframe del PDF */
+        .pdf-viewer {
+            width: 80%; /* O el ancho que prefieras */
+            height: 500px; /* O la altura que prefieras */
+            margin: auto;
         }
     </style>
     <script>
         function cambiarColorFondo() {
-            var tonosNaranja = ["#FFD700", "#FFA500", "#FF8C00", "#FF6347"]; /* Tonos naranjas */
+            var tonosNaranja = ["#FFD700", "#FFA500", "#FF8C00", "#FF6347"];
             var nuevoColor = tonosNaranja[Math.floor(Math.random() * tonosNaranja.length)];
             document.body.style.backgroundColor = nuevoColor;
         }
@@ -55,10 +61,11 @@
 </head>
 
 <body>
-    <img class="logo" src="logo.jpg" alt="Logo"> <!-- Reemplaza 'tu_logo.png' con la ruta de tu logotipo -->
+    <img class="logo" src="logo.jpg" alt="Logo">
 
     <h1>Diego A Rodriguez</h1>
-    <a href="20240404_CV_DIEGO_A_RODRIGUEZ.pdf">Mi curriculum</a>
+    <!-- Incrustar el PDF directamente en la página -->
+    <iframe src="20240404_CV_DIEGO_A_RODRIGUEZ.pdf" class="pdf-viewer"></iframe>
 
     <button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
 </body>
